@@ -1,0 +1,127 @@
+h1 { /* centers the text, changes the font, size, and color */
+text-align: center;
+font-size: 56px;
+font-family: blippo, fantasy;
+color: white;
+}
+
+h2 { /*changes the text color and puts the text the row 2 of column 2 */
+color: white;
+grid-column: 2;
+grid-row: 2;
+margin: 10px;
+}
+
+body {/* changes the background to black */
+ background-color: black;
+}
+
+.container { /*creates a grid display with 3 evenly spaced columns */
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grip-gap: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+#gameContainer {
+ text-align: center;
+ grid-column: 2;
+ grid-row: 1;
+}
+#gameBoard { /*centered the board and puts the board in row 1 of column 2 */
+ border: 3px solid;
+ display: block;
+ margin: 0 auto;
+ grid-column: 2;
+ grid-row: 1;
+ background-color: white;
+}
+
+#scoreText {
+ font-family: Helvetica, "Times New Roman";
+ font-size: 100px;
+ color: white;
+}
+
+#resetBtn {
+ font-family: Helvetica, "Times New Roman";
+ font-size: 20px;
+ width: 100px;
+ height: 50px;
+ border: 4px solid;
+ border-radius: 15px;
+ cursor: pointer;
+}
+
+#controls {
+font-size: 22px;
+ color: white;
+ margin: 10px;
+ grid-column: 2;
+ grid-row: 2;
+ margin-top: 50px;
+}
+
+#description { /* changed the text to white and puts the text in row 2 of column 2 */
+ font-size: 22px;
+ color: white;
+ margin: 10px;
+ grid-column: 2;
+ grid-row: 3;
+ margin-top: 50px;
+}
+
+#ad1 { /* puts the text in row 1, column 1 and centers it */
+ grid-column: 1;
+ grid-row: 1;
+ display: block;
+ margin: 0 auto;
+ margin-top: 30px;
+}
+
+#ad2 { /*puts the ad in row 1 of column 3 and centers the picture*/
+ grid-column: 3;
+ grid-row: 1;
+ display: block;
+ margin: 0 auto;
+ margin-top: 30px;
+}
+
+#ad3 { /* puts the picture in column 2, row 3 and centers it */
+ grid-column: 2;
+ grid-row: 4;
+ display: block;
+ margin: 0 auto;
+}
+
+footer {
+margin: 10px;
+padding: 5px;
+font-size: 32px;
+bottom: 0%;
+background: gray;
+}

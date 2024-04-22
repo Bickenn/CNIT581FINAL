@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/blog2style.css' %}"/> <!-- links the stylesheet -->
+    <h1>ByteBlend</h1>
+    <h2>Unlocking Tomorrow's Tech Today: Your Gateway to Innovation and Insight!</h2>
+</head>
+<body>
+    <div>
+        <ul> <!-- creates a list at the top that the user can use to navigate back to the home page -->
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'infinifit' %}">Infinifit</a></li>
+        </ul>
+    </div>
+    <div class="container"> <!-- class that uses a grid display to put the main content into the second column -->
+	<div class="bg-image"></div>
+	<a id="ad1" href="https://www.schwab.com/"><img id="ad1" src="{% static 'researchweb/imgs/banner_ad.png' %}"></a> <!-- creates the charles schwab ad on the left side image taken from google ads -->
+    	<div id="blogContent"> <!-- houses the title of the article, the author, date it was "written" and the article itself -->
+		    <h3>The Future of Transportation: Exploring the Promise of Hyperloop Technology</h3>
+		    <h4>By Lastname Firstname | Written 7/02/21 at 12:17 PM</h4>
+		    <img id="thumbnail" src="{% static 'researchweb/imgs/hyperloop.jpg' %}"> <!-- image credit in the stylesheet -->
+		    <div id="articleBody"> <!-- Main body of the article. Was generated using chatGPT -->
+            		<p>In the realm of transportation, the quest for speed, efficiency, and sustainability has long been a driving force behind innovation. From the steam locomotive to the advent of airplanes, humanity has continuously pushed the boundaries of what's possible in traversing vast distances. However, as our population grows, urban centers expand, and environmental concerns escalate, traditional modes of transportation are facing unprecedented challenges. Enter the hyperloop – a revolutionary concept poised to redefine the way we think about travel.
+
+Imagine boarding a pod and hurtling through a near-vacuum tube at speeds exceeding 700 miles per hour. This is the vision of the hyperloop, a high-speed transportation system first proposed by Elon Musk in 2013. At its core, the hyperloop concept involves using magnetic levitation and low-pressure tubes to propel passenger or cargo pods at incredible velocities, offering the potential for ultra-fast, energy-efficient travel.
+
+One of the most promising aspects of hyperloop technology is its potential to drastically reduce travel times between major cities. For instance, a journey that typically takes several hours by car or train could be completed in a fraction of the time via hyperloop. This not only enhances convenience and productivity but also has the potential to reshape regional economies and foster greater connectivity between urban centers.
+           		 </p>
+            		<p>
+                		Moreover, hyperloop technology boasts impressive sustainability credentials. By operating in a near-vacuum environment, the system minimizes air resistance, resulting in significantly lower energy consumption compared to traditional modes of transportation. Additionally, many proposed hyperloop designs incorporate renewable energy sources such as solar power, further reducing the system's carbon footprint.
+
+Despite its undeniable potential, the road to widespread implementation of hyperloop technology is not without its challenges. Engineering complexities, regulatory hurdles, and significant capital investment represent formidable barriers to overcome. However, recent years have seen a surge in interest and investment from both public and private sectors, with several companies around the world actively developing and testing hyperloop prototypes.
+
+            		</p>
+           		 <p>
+               			One such company is Virgin Hyperloop, which successfully conducted the world's first passenger test in November 2020. The historic test saw two passengers travel safely inside a hyperloop pod, marking a significant milestone in the development of this transformative technology. Similarly, other companies like SpaceX, Hyperloop Transportation Technologies, and TransPod are also making strides in advancing hyperloop technology.
+
+Looking ahead, the potential applications of hyperloop technology extend far beyond passenger transportation. Cargo logistics, urban mobility, and even intercontinental travel are just a few areas where hyperloop systems could revolutionize the way we move people and goods. Moreover, as the technology matures and infrastructure develops, hyperloop networks could seamlessly integrate with existing transportation systems, offering a truly interconnected and efficient global transit network.
+
+In conclusion, while the hyperloop remains a concept in its infancy, its potential to revolutionize transportation is undeniable. By harnessing cutting-edge engineering, sustainable principles, and visionary ambition, hyperloop technology has the power to reshape the way we think about travel and pave the way towards a faster, cleaner, and more connected future. As we stand on the brink of a new era in transportation, the hyperloop represents a bold step forward into uncharted territory – one that promises to unlock new possibilities and propel us towards a brighter tomorrow.
+		
+            		</p>
+            </div> <!-- ends the articleBody div -->
+	    
+	    <div class="innerWrapper"> <!-- class that houses a 2x3 grid for the clickbait articles --> <!-- All of the captions for these images were generated by chatGPT -->
+            <div id="more1">
+                <a href="https://www.foxweather.com/earth-space/bermuda-triangle-mystery-solved"><img id="bermuda" src="{% static 'researchweb/imgs/bermuda.jpg' %}" width="275" height="183"></a> <!-- image taken from https://www.royalcaribbean.com/guides/bermuda-triangle-mystery-sea-legends -->
+                <h5>Shocking Discovery: Scientists Uncover Hidden Secrets of the Bermuda Triangle!</h5>
+            </div>
+            <div id="more2">
+                <a href="https://www.ecco-verde.com/madara/time-miracle-wrinkle-resist-eye-cream-1"><img id="younger" src="{% static 'researchweb/imgs/younger.jpg' %}" width="275" height="183"> </a> <!-- image taken from https://pausewellaging.com/blogs/connect-the-dots/well-aging-vs-anti-aging-mindset -->
+                <h5>You Won't Believe What Happened When This Ordinary Mom Started Using This Miracle Anti-Aging Cream!</h5>
+            </div>
+            <div id="more3">
+                <a href="https://pagesix.com/"><img id="gossip" src="{% static 'researchweb/imgs/gossip.jpg' %}" width="275" height="183"></a><!-- image taken from https://www.mirror.co.uk/3am/celebrity-news/top-celebrity-news-gossip-stories-28906545 with credit to Robyn Beck -->
+                <h5>Exclusive Interview: Celebrities Spill the Beans on Their Juiciest Hollywood Secrets!</h5>
+            </div>
+            <div id="more4">
+                <a href="https://www.youtube.com/watch?v=qoQ5cOhan9k"><img id="spooky" src="{% static 'researchweb/imgs/hauntedh.jpg' %}" width="275" height="183"></a> <!-- image taken from Adobe stock library and is AI generated -->
+                <h5>The Truth Behind the Mysterious Haunted House That No One Dares to Enter!</h5>
+            </div>
+            <div id="more5">
+                <a href="https://www.mentalfloss.com/article/649386/cryptids-around-the-world"><img id="cryptid" src="{% static 'researchweb/imgs/cryptid.jpg' %}" width="275" height="183"></a> <!-- image used from https://www.library.miami.edu/gleason/cryptids/index.html -->
+                <h5>10 Unbelievable Facts About the World's Most Elusive Cryptids!</h5>
+            </div>
+            <div id="more6">
+                <a href="https://www.forbes.com/sites/devinthorpe/2012/10/21/my-ten-point-plan-to-get-rich-quick-as-an-entrepreneur/"><img id="rich" src="{% static 'researchweb/imgs/richdude.jpg' %}" width="275" height="183"></a> <!-- image taken from https://www.realmenrealstyle.com/how-to-look-rich/ -->
+                <h5>From Rags to Riches: How One Entrepreneur Went from Broke to Millionaire in Just One Year!</h5>
+            </div>
+	    </div>
+		<a href="https://www.ubisoft.com/en-us/game/rainbow-six/siege"><img id="ad2" src="{% static 'researchweb/imgs/siege.png' %}"></a><!-- puts an ad underneath the 2x3 grid image taken from google ads -->
+	    </div>
+            <div class="bg-image"></div> <!-- puts the background image to the right -->
+    </div>
+</body>
+<footer>
+    Rest assured that no identifiable information of yours will be used within this study. No one will even know that you participated. All I ask is for your honest thoughts and opinions. Thank you.
+</footer>
+</html>

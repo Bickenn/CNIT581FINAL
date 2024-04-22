@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNIT58100 Web Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/stylehome.css' %}"/>
+</head>
+<body>
+    <h1>CNIT 58100 Research Website</h1>
+
+    <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'newsArticle1' %}">News Articles</a></li>
+            <li><a href="{% url 'breakout' %}">Games</a></li>
+            <li><a href="{% url 'infinifit' %}">Blog Site</a></li>
+            <li><a href="{% url 'adminLogin' %}">Admin Portal</a></li>
+            <li><a href="{% url 'addUser' %}">Add User</a></li>
+        </ul>
+    </div>
+
+    <h1>User Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+		<th>Firstname</th>
+		<th>Lastname</th>
+                <!-- Add more columns for additional fields -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+		    <td>{{ user.fname }}</td>
+		    <th>{{ user.lname }}</td>
+                    <!-- Add more cells for additional fields -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>	
+</body>
+</html>

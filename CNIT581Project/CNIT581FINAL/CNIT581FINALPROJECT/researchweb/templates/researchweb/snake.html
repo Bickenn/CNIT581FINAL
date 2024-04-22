@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", 
+          content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'researchweb/css/snakestyle.css' %}"> <!--references the stylesheet-->
+</head>
+ 
+<body>
+    <h1>Game Corner - Snake Game
+    </h1>
+	<div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'breakout' %}">Breakout</a></li>
+        </ul>
+    </div>
+    <div class="container"> <!-- creates a grid -->
+        <a id="ad1" href="https://www.peacocktv.com/"><img id="ad1" src="{% static 'researchweb/imgs/peacock.png' %}"></a> <!-- image taken from google ads -->
+        <a id="ad2" href="https://acuityscheduling.com/"><img id="ad2" src="{% static 'researchweb/imgs/orange_tax.png' %}"></a> <!-- image taken from google ads -->
+        <a id="ad3" href="https://us.generaliglobalassistance.com/"><img id="ad3" src="{% static 'researchweb/imgs/landscape_ad2.png' %}"></a> <!-- image taken from google ads -->
+        <div id="gameContainer">
+            <canvas id="gameBoard" width="500" height="500"></canvas> <!--creates the canvas element where the game will appear -->	
+            <div id="scoreText">0</div>
+            <button id="resetBtn">Reset</button>
+        </div>
+    	<!-- <script src="snakegame.js"></script>  calls the code for the game -->
+	<h2> Game Controls</h2>
+		<div id="controls">
+             		Use the WASD keys to control the snake's movement. W key turns the snake up, S turns the 			snake down, A turns the snake left, and D turns the snake right.
+		</div>
+	<div id="description">
+    		<h2>Game Description</h2>
+	Snake was originally developed as a two player arcade game in 1976 named blockade in which the objective was to simply survive longer than the other player. The game then evolved into the game widely used today where one player has the objective of "feeding" the snake and avoding its evergrowing body. The goal of the game is to eat as many pellets as possible and stay alive by avoiding your rapidly growing body. The snake is colored white and the goal is to consume the yellow pellets. 
+    	</div>
+    </div>
+<script src="{% static 'researchweb/snakegame.js' %}"></script> <!-- I found a really nice tutorial on youtube here https://www.youtube.com/watch?v=Je0B3nHhKmM I followed with him and commented throughout the code to tell myself what was happening and what each thing did and to learn from it -->
+</body>
+<footer>
+    Rest assured that no identifiable information of yours will be used within this study. No one will even know that you participated. All I ask is for your honest thoughts and opinions. Thank you.
+</footer>
+</html>

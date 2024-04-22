@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNIT58100 Web Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/stylehome.css' %}"/>
+</head>
+<body>
+    <h1>CNIT 58100 Research Website</h1>
+
+    <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'newsArticle1' %}">News Articles</a></li>
+            <li><a href="{% url 'breakout' %}">Games</a></li>
+            <li><a href="{% url 'infinifit' %}">Blog Site</a></li>
+            <li><a href="{% url 'adminLogin' %}">Admin Portal</a></li>
+        </ul>
+    </div>
+
+    <div id="explain">
+        Thank you for participating in this project. I wanted to see how users interact with Internet Advertising (IA) because I was curious to see whether or not user feeback could enhance user experience. To measure this, this application was constructed to determine whether or not my hypothesis was correct. Within this application are 3 various types of webpages that a person may encounter when using the internet. These 3 types of pages are news articles, blog sites, and games. Within each of these 3 categories there are two different webpages. You will interact with each webpage within each section and report your thoughts, feelings, questions, regarding which one you think you had a better browsing experience on via the accompanying survey from qualtrics. You may take as long as you would like on each webpage, there is no time limit. You have the freedom to roam wherever you please within the appilcation. However, I recommend sticking within one topic until you are ready to move on to the next. Again, I want to thank you for your participation in this study. The accompanying survey can be found <a href="https://qualtricsxmvfgjs6kw4.qualtrics.com/jfe/form/SV_bHrl92ebr9hMVfw">here</a>.
+       
+    </div>
+</body>
+<footer>
+    Rest assured that no identifiable information of yours will be used within this study. No one will even know that you participated. All I ask is for your honest thoughts and opinions. Thank you.
+</footer>
+</html>

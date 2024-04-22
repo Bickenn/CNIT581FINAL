@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNIT58100 Web Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/stylehome.css' %}"/>
+</head>
+<body>
+    <h1>CNIT 58100 Research Website</h1>
+
+    <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'newsArticle1' %}">News Articles</a></li>
+            <li><a href="{% url 'breakout' %}">Games</a></li>
+            <li><a href="{% url 'infinifit' %}">Blog Site</a></li>
+	        <li><a href="{% url 'adminLogin' %}">Admin Portal</a></li>
+        </ul>
+    </div>
+    <div>
+	<h2>Admin Login</h2>
+	<form id="loginUserForm" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="contact-submit" class="btn btn-success btn-lg" />
+	</form>
+</body>
+</html>

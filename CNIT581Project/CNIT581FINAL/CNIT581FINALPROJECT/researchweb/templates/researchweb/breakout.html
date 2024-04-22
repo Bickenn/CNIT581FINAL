@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/breakoutstyle.css' %}"/> <!-- references stylesheet -->
+</head>
+<body>
+    <h1>Game Corner - Breakout</h1>
+    <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'snake' %}">Snake</a></li>
+        </ul>
+    </div>
+    <div class="container">
+	<a href="https://acuityscheduling.com/"><img id="ad2" src="{% static 'researchweb/imgs/orange_tax.png' %}"></a> <!-- image taken from google ads -->
+	<a id="ad3" href="https://www.progressive.com/"><img id="ad3" src="{% static 'researchweb/imgs/progressive.png' %}"></a> <!-- image taken from google ads --> 
+	<a id="ad4" href="https://www.starbucks.com/"><img id="ad4" src="{% static 'researchweb/imgs/starbucks.gif' %}"></a> <!-- gif taken from https://mailbluster.com/blog/gif-in-email credited to Starbucks -->
+        <canvas id="board" width="520" height="620"></canvas>
+	<script src="{% static 'researchweb/breakout2.js' %}"></script> <!-- I followed the tutorial at https://www.youtube.com/watch?v=EmhkLLWAZ8E&t=16s to create this I floowed along and although he did include comments I also included a bit more to describe wwhat each thing did -->
+	<a id="ad1" href="https://www.peacocktv.com/"><img id="ad1" src="{% static 'researchweb/imgs/peacock2.png' %}"></a> <!-- image taken from google ads -->
+	<div id="controls">
+		<h2>Game Controls</h2>
+		<p> Use the left and right arrow keys to move the bottom platform. Left arrow moves the platform left, right arrow moves the platform right. </p>
+	</div>
+	<div id="description">
+	<h2>Game Description</h2> <!-- brief descrpition of the history of the gamer along with how to play and the control -->
+            <p>Breakout was developed by Atari in the late 1970s by Steve Jobs and Steve Wozniak. On of the main challenges they faced during the devlopment cycle was that the game required a large amount of chips that it required to operate. This reduction in chips was necessary because it was expensive for Atari to put a lrage amount of chips into each arcade cabinet. They succeeded and Jobs pocketed the $5,000 dollar bonus that came with reducing the amount of chips without disclosing it to Wozniak. Breakout is a simple game in which you use the platform to move left or right to keep the ball up in the air. If you miss the ball 3 times then its game over! Good Luck!
+            </p>
+        </div>
+    </div>
+</body>
+<footer>
+    Rest assured that no identifiable information of yours will be used within this study. No one will even know that you participated. All I ask is for your honest thoughts and opinions. Thank you.
+</footer>
+</html>

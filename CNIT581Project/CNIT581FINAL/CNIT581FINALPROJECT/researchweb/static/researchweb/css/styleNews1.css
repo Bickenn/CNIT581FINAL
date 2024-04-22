@@ -1,0 +1,111 @@
+h1 { /* centers the text, makes it bigger and changes the font */
+text-align: center;
+font-size: 48px;
+font-family: garamond;
+}
+
+h2 {
+font-size: 35px;
+}
+
+h3 {
+ font-size: 28px;
+}
+
+ul { /*changes the color of the taskbar at the top */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {/* floats the text left */
+  float: left;
+}
+
+li a { /* displays the options as blocks and pads the text within each block */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+#disclaimer { /*changes the disclaimer text red */
+color: red;
+}
+
+.wrapper { /*creates grid display and the amount of columns */
+ display: grid;
+ position: relative;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap:10px;
+ background-color: #ede6d6;
+}
+
+.thumbnail { /*puts the thumbnail in column 2 and centers it */
+ grid-column: 2;
+ display: block;
+ margin: auto;
+ width: 60%;
+}
+
+#ad3{/*puts the ad in column 1 of the grid */
+ grid-row: 2;
+}
+
+.articleInfo { /*puts the article info in column 2*/
+ font-family: optima, sans-serif;
+ grid-column: 2;
+ grid-row: 2;
+}
+
+.articlebody { /*changes the font and increases the spacing of the words */
+ font-family: georgia;
+ font-size: 20px;
+ word-spacing: 5px;
+ grid-column: 2;
+}
+
+#ad1 { /*creates a small margin */
+ margin: 20px;
+}
+
+#ad2 { /* centers the picture */
+ display: block;
+ margin: auto;
+ width: 60%;
+}
+
+#videoplayer { /*changes the dimensions of the video player and puts the element in column 3 */
+ float: right;
+ top: 0%;
+ width: 500px;
+ height: 250px;
+ grid-column: 3;
+}
+
+#weather {
+  text-align: center;
+  background-color: lightblue;
+  border-style: solid;
+  border-width: 5px;
+  border-color: darkblue;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer { /*puts footer at bottom of the page */
+  margin: 10px;
+  padding: 5px;
+  font-size: 32px;
+  bottom: 0%;
+  background: gray;
+}

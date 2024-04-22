@@ -1,0 +1,113 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+/* increases the font size of h1 and changes the font while centering it */
+h1 {
+font-size: 64px;
+text-align: center;
+font-family: verdana, sans-serif;
+}
+
+h2 { /* chnages the font and centers the text */
+text-align: center;
+font-family: verdana, sans-serif;
+}
+
+.container { /* creates a grid display so that the content be be in the center column */
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-color: #9f5f91;
+ grid-gap: 10px;
+}
+
+/* the next four elements are all used in making the taskbar at the top of the page look nice */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #572c57;
+}
+
+li {
+  float: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+/* centers and changes the font of the article title */
+h3 {
+ text-align: center;
+ font-family: verdana, sans-serif;
+}
+
+h4 { /* centers and chnages the font of the text under the article title */
+ text-align: center;
+ font-family: verdana, sans-serif;
+}
+
+#thumbnail { /*centers the thumbnail */
+ display: block;
+ margin: 0 auto;
+ padding: 10px;
+}
+
+#blogContent { /*puts the blogContent div in the second column of the grid created in the container class */
+ grid-column:2;
+ margin: 10px;
+}
+
+#ad1 { /* puts the ad in the first column and fixes its position so its always on screen */
+ grid-row: 1;
+ position: fixed;
+ right: 75%;
+ margin-top: 75px;
+}
+
+#articleBody { /*the div where all of the body text exists */
+ font-size: 19px; /*makes it a little bigger for readability */
+ font-family: myFirstFont; /*changes the font*/
+ margin-left: 50px;
+ margin-right: 50px;
+ border-style: solid;
+ border-width: 5px;
+ border-color: #572c57;
+ background-color: #e26972;/*chnages the background color*/
+ padding: 20px;
+ word-spacing: 5px; /*declutters the words and makes them mor readable */
+}
+
+#video_player { 
+ display: block; /*centers the video player */
+ margin-left: 100px;
+}
+
+.innerWrapper {
+ display: grid; /*creates the grid */
+ margin: 150px;
+ grid-template-columns: 1fr 1fr; /*creates 2 even spaced columns */
+ grid-template-rows: 1fr 1fr 1fr; /*creates 3 evenly spaced rows */
+ grid-gap: 20px;
+ text-align: center; /*centers the text*/
+}
+
+footer { /*puts the footer at the bottom of the page */
+font-size: 32px;
+bottom: 0%;
+background: gray;
+text-color: white;
+}

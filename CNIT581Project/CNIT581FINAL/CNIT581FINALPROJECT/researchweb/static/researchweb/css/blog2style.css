@@ -1,0 +1,131 @@
+
+h1 {
+font-size: 64px;
+text-align: center;
+/* Gave the heading a more theme appropriate font */
+font-family: OCR A Std, monospace;
+}
+
+h2 {
+text-align: center;
+font-family: OCR A Std, monospace;
+}
+
+.container {
+/* creates a grid that house 3 columns */	
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 10px;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../imgs/computer background.jpg");
+  /*image teaken from: https://www.istockphoto.com/photo/abstract-modern-tech-of-programming-code-screen-developer-gm1386341272-444661019?searchscope=image%2Cfilm */
+
+  /* Adds the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Centers and scales the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*changes the taskbar at the top so that looks smoother */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h3 {
+ text-align: center;
+ font-family: verdana, sans-serif;
+}
+
+h4 {
+ text-align: center;
+ font-family: verdana, sans-serif;
+}
+
+#thumbnail {
+ /*centers the thumbnail */
+ display: block;
+ margin: 0 auto;
+ padding: 10px;
+ /*image used taken from https://bigthink.com/the-future/elon-musk-hyperloop-193494/ */
+}
+
+#blogContent {
+ /* puts the content into the second column of the grid */
+ grid-column:2;
+ margin: 10px;
+}
+
+#ad1 {
+/*puts an ad in the first column of the grid away from the left side towards the text */
+ grid-column: 3;
+ grid-row: 1;
+ /*fixes the position so that it stays in the same place on screen */
+ position: fixed;
+ right: 75%;
+ margin-top: 75px;
+}
+
+#articleBody {
+ font-size: 19px;
+ font-family: "Courier New", Courier, monospace;
+ margin-left: 50px;
+ margin-right: 50px;
+ padding: 20px;
+ word-spacing: 5px; /*made the spacing a little bigger so its easier to read */
+ font-weight: bold;
+}
+
+
+.innerWrapper { /* this is for the 2x3 grid below the content for the clickbait articles */
+ display: grid;
+ margin: 150px;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-gap: 20px;
+ text-align: center;
+}
+
+#ad2 {
+ /*centers the ad */
+ display: block;
+ margin: 0 auto;
+}
+
+footer {
+/* puts the footer at the bottom of page */
+font-size: 32px;
+bottom: 0%;
+background: gray;
+text-color: white;
+}

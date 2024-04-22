@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNIT58100 Web Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'researchweb/css/stylehome.css' %}"/>
+</head>
+<body>
+    <h1>CNIT 58100 Research Website</h1>
+
+    <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'newsArticle1' %}">News Articles</a></li>
+            <li><a href="{% url 'breakout' %}">Games</a></li>
+            <li><a href="{% url 'infinifit' %}">Blog Site</a></li>
+            <li><a href="{% url 'adminLogin' %}">Admin Portal</a></li>
+            <li><a href="{% url 'adminPage' %}">Admin Page</a></li>
+        </ul>
+    </div>
+    <div class="container mt-5 w-50">
+        <form id="addUserForm" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" name="contact-submit" class="btn btn-success btn-lg" />
+        </form>
+    </div>
+    {% block javascript %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // catch the form's submit event
+            $('#addUserForm').submit(function () {
+                // create an AJAX call
+                $.ajax({
+                    data: $(this).serialize(), // get the form data
+                    type: $(this).attr('method'), // GET or POST
+                    url: "{% url 'addUser' %}",
+                    // on success
+                    success: function (response) {
+                        alert("New User added successfully!");
+                    },
+                    // on error
+                    error: function (response) {
+                        // alert the error if any error occurred
+                        alert(response.responseJSON.errors);
+                        console.log(response.responseJSON.errors)
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+    {% endblock javascript %}
+</body>
+</html>

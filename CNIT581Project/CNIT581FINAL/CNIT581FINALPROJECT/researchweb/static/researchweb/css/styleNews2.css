@@ -1,0 +1,100 @@
+h1 { /* centers the heading text, chnages the font, and makes the font bigger */
+text-align: center;
+font-size: 48px;
+font-family: garamond;
+}
+
+h2 {
+font-size: 35px;
+}
+
+h3 {
+font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+#disclaimer { /*changes the disclaimer red*/
+color: red;
+}
+
+ #top_ad { /*centers the big ad before the article */
+ margin: 40px;
+ display: block;
+ margin: auto;
+ width: 60%;
+}
+
+.wrapper { /*creates a grid with 3 evenly spaced columns*/
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ grid-gap:10px;
+}
+
+.thumbnail {
+ grid-column: 2;
+ display: block;
+ margin: auto;
+ width: 60%;
+}
+
+#articleInfo {
+ font-family: optima, sans-serif;
+ grid-column: 2;
+}
+
+#articlebody { /*changes the font and puts the text in column 2 of the wrapper container */
+ font-family: georgia;
+ font-size: 20px;
+ word-spacing: 5px;
+ grid-column: 2;
+}
+
+#bottom_ad { /*centers the ad at the bottom and makes it a tad smaller*/
+ display: block;
+ margin: auto;
+ width: 60%;
+}
+
+#weather {
+  text-align: center;
+  background-color: lightblue;
+  border-style: solid;
+  border-width: 5px;
+  border-color: darkblue;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer {
+margin-top: 10px;
+padding: 5px;
+font-size: 32px;
+bottom: 0%;
+background: gray;
+}

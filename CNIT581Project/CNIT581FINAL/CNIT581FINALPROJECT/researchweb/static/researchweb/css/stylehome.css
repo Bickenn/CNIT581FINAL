@@ -1,0 +1,52 @@
+h1 {
+ text-align: center;
+ font-size: 64px;
+}
+footer { /*puts footer at bottom of the page */
+margin: 10px;
+padding: 5px;
+font-size: 32px;
+bottom: 0%;
+background: gray;
+text-color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+#explain{ 
+ text-align: justified;
+ border: 3px solid black;
+ font-size: 28px;
+ margin-left: 25%;
+ margin-right: 25%;
+ margin-top: 10%;
+ padding: 20px;
+ color: white;
+ background-color: #4E4F50
+}
