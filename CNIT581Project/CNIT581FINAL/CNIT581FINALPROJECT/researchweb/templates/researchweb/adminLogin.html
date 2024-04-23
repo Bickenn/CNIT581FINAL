@@ -23,7 +23,7 @@
 	<h2>Admin Login</h2>
 	<form id="loginUserForm" method="POST">
         {% csrf_token %}
-        {{ form }}
+        {{ form }} <!-- gets the form from forms.py-->
         <input type="submit" name="contact-submit" class="btn btn-success btn-lg" />
 	</form>
 </body>

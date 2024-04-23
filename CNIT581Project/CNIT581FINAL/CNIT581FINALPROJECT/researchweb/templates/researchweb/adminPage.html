@@ -21,7 +21,7 @@
         </ul>
     </div>
 
-    <h1>User Data</h1>
+    <h1>User Data</h1> <!-- Creates the table with all the users-->
     <table border="1">
         <thead>
             <tr>
@@ -30,7 +30,6 @@
                 <th>Email</th>
 		<th>Firstname</th>
 		<th>Lastname</th>
-                <!-- Add more columns for additional fields -->
             </tr>
         </thead>
         <tbody>
@@ -39,9 +38,8 @@
                     <td>{{ user.id }}</td>
                     <td>{{ user.username }}</td>
                     <td>{{ user.email }}</td>
-		    <td>{{ user.fname }}</td>
-		    <th>{{ user.lname }}</td>
-                    <!-- Add more cells for additional fields -->
+		            <td>{{ user.fname }}</td>
+		            <th>{{ user.lname }}</td>
                 </tr>
             {% endfor %}
         </tbody>

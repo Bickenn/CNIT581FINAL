@@ -1,0 +1,19 @@
+1. Install Python with pip
+2. Install Visual Studio Code
+3. Open Visual Code and install the python extension by Microsoft
+4. Open the CNIT581Project Folder from Github in Visual Studio Code
+5. Navigate to the Taskbar at the top where it says "File", "Edit", "Selection", etc.
+6. Click on "Terminal" > "New Terminal"
+7. Now navigate to the terminal at the bottom of the screen and type the command "pip install pipenv"
+8. Once that is completed use the "cd" command to move to the directory "CNIT581FINALPROJECT"
+	a. "cd CNIT581Project"
+	b. "cd CNIT581Final"
+	c. "cd CNIT581FINALPROJECT"
+	d. the terminal line should look like "PS C:\Users\your_name\CNIT581FINAL-main\CNIT581Project\CNIT581FINAL\CNIT581FINALPROJECT>"
+9. Type the command "pipenv install django"
+10. Once step 9 has finished installing tyep the command "pipenv shell"
+11. Type the command "cd CNIT581FINALPROJECT"
+12. Type the command "pip install requests"
+13. Type the command "pip install pandas"
+14. Type the command "python manage.py runserver 8000"
+15 Click on the link "http://127.0.0.1:8000/" inside of the terminal

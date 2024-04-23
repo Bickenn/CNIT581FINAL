@@ -1,0 +1,15 @@
+Software/Packages/APIs Used in Project:
+Visual Studio Code - https://code.visualstudio.com/
+Python - https://www.python.org/
+	- pip
+	- pipenv
+	- pandas
+Django - https://www.djangoproject.com/
+	-requests
+OpenWeatherAPI - https://openweathermap.org/api
+Database Used - SQLite3 - https://www.sqlite.org/
+Ajax jQuery API - https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+
+Features:
+This is a basic web application that has 3 different types of webpages; News Article, Blog, and Games. Within each of these three types of pages there are two different pages, one has the ad experience that a user might experience when using that kind of website and the other has the ads altered. The point of the difference in ads is to measure the satisfaction of the users in regards to the advertisements to see if users could curate a better ad experience than what is currently available. Additionally, there is a admin page that is exclusive to the admin user. When the 'Admin Portal' link is clicked in the taskbar the user will be brought to the 'Admin Portal' page and be promted to provide a username and password if they wish to log in as an admin. If you want to access this admin page the username is "pulsa" and the password is "Password123". Once logged in as an admin the user datatable is visible to the admin with all user objects in the "User" table. This table is housed inside of a SQLite3 database courtesy of django. I made two data models within django one called "User", and another called "authUser". Users have 4 attributes 'username', 'email', 'fname', and 'lname', while 'authUser' has the four stated previously and 'password'. When the user is on the admin page they have the opion to add a user to the data model. If they click on 'Add User' on the taskbar they will be take to a page with 4 input boxes. Once the 4 input fields are filled with information, when the user hits the submit button a pop up will show if the new user was successfully added. After adding a user, once navigated back to the admin page a new user will show up in the user table.
+

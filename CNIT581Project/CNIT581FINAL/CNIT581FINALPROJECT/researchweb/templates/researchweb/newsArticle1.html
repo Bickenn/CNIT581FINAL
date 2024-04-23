@@ -27,8 +27,8 @@
         </div>
 	<a id="ad3" href="https://www.indiquehair.com/"><img id="ad3" src="{% static 'researchweb/imgs/black_friday.gif' %}" width="360" height="360"> </a> <!-- gif taken from https://tenor.com/view/bellami-black-friday-bellami-hair-extensions-bellami-hair-black-friday-deals-walmart-black-friday-gif-19322977 -->
     <div id="weather">
-        <strong>Current Weather - West Lafayette</strong>
-            <p>Current Temp: {{weather.main.temp}}F</p>
+        <strong>Current Weather - West Lafayette</strong> 
+            <p>Current Temp: {{weather.main.temp}}F</p> <!-- gets info from the API called in views.py-->
             <p>Feels Like: {{weather.main.feels_like}}F</p>
             <p>High Temp: {{weather.main.temp_max}}F</p>
             <p>Low Temp: {{weather.main.temp_min}}F</p> 

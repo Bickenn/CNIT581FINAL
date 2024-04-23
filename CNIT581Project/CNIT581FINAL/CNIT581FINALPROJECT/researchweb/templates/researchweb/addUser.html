@@ -24,12 +24,12 @@
     <div class="container mt-5 w-50">
         <form id="addUserForm" method="POST">
             {% csrf_token %}
-            {{ form }}
+            {{ form }} <!-- gets the form from forms.py-->
             <input type="submit" name="contact-submit" class="btn btn-success btn-lg" />
         </form>
     </div>
     {% block javascript %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- call ajax API-->
     <script>
         $(document).ready(function () {
             // catch the form's submit event
